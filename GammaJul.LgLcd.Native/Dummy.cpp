@@ -1,0 +1,1 @@
+// At least one .cpp file is needed for the dll to be emitted

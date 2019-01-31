@@ -1,0 +1,25 @@
+v1.0 - 2009-05-20
+ * Initial release.
+
+v1.1 - 2009-05-29
+ * Added a GdiDrawing event (and OnGdiDrawing() method) on LcdGdiPage to make custom GDI+ drawing easier.
+ * PrepareGraphics() and PrepareGraphicsForChild() on LcdGdiPage are now protected internal instead of internal.
+ * Added an Invalidate() method to LcdPage to force the update/draw cycle on the next frame.
+ * Updated GDI+ sample to demonstrate custom drawing on the second page.
+
+v1.1.1 - 2009-07-08
+ * Fix: IsVisible was not working at all.
+ * Fix: DoUpdateAndDraw() after a ReOpen() was bugged due to timer issues.
+ * Fix: Right/Bottom aligned text was partially out of the screen.
+ * Fix: Typos in comments.
+ * Thanks to Antcodd for the bug reports.
+
+v1.1.2 - 2009-08-03
+ * Fix: LcdGdiPage.GdiDrawing event is now called after the drawing of the page's children, not before.
+ * Fix: Small memory leak when a page was updated but not drawn.
+
+v1.1.3 - 2009-09-10
+ * Added LcdSoftButtons.Light to know when the Light button is pressed.
+
+v1.1.4 - 2010-10-20
+ * Fix: Creating a second device was incorrectly invalidating the first device soft buttons handler.
